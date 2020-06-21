@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>backspace.png</file>
+        <file>wallet.png</file>
+        <file>credit_card.png</file>
+        <file>rubel.png</file>
+        <file>star.png</file>
+        <file>chat.png</file>
+        <file>more.png</file>
+        <file>search.png</file>
+        <file>voice_search.png</file>
+        <file>money1.jpg</file>
+        <file>money2.jpg</file>
+        <file>money3.jpg</file>
+        <file>money4.jpg</file>
+        <file>money5.jpg</file>
+        <file>advertisement_background.jpg</file>
+        <file>mobile.png</file>
+        <file>receipt.png</file>
+        <file>internet.png</file>
+        <file>bus.png</file>
+        <file>transfer.png</file>
+        <file>bank_transfer.png</file>
+        <file>person_transfer.png</file>
+        <file>world_transfer.png</file>
+    </qresource>
+</RCC>

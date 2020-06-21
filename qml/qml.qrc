@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qtquickcontrols2.conf</file>
+    </qresource>
+    <qresource prefix="/qml">
+        <file>main.qml</file>
+        <file>SplashScreen.qml</file>
+        <file>PasswordHandler.qml</file>
+        <file>backend.js</file>
+        <file>PasswordScreen.qml</file>
+        <file>MainScreen.qml</file>
+        <file>MainPage.qml</file>
+        <file>Account.qml</file>
+        <file>PaymentsPage.qml</file>
+        <file>PaymentsItem.qml</file>
+        <file>RadiusImage.qml</file>
+        <file>Advertisement.qml</file>
+    </qresource>
+</RCC>
