@@ -57,6 +57,13 @@ Pane{
                  headerItem.anchors.rightMargin
           radius: 10
           color: "honeydew"
+          layer.enabled: true
+          layer.effect: DropShadow {
+            transparentBorder: true
+            horizontalOffset: 1
+            verticalOffset: 1
+            color: "grey"
+          }
           Column{
             id: headerItem
             anchors{
