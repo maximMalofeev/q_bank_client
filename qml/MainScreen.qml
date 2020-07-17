@@ -17,9 +17,7 @@ Page{
 
     MainPage {}
     PaymentsPage {}
-    Rectangle{
-      color: "red"
-    }
+    ServicesPage {}
     Rectangle{
       color: "green"
     }

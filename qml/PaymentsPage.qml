@@ -7,6 +7,7 @@ import QtQuick.Controls.Material 2.12
 
 Pane{
   id: root
+  clip: true
 
   ListView{
     id: rootList
@@ -51,19 +52,12 @@ Pane{
           ListElement{ title: "Перевод"; recipient: "Олег Петров"; amount: 500 }
         }
 
-        delegate: Rectangle{
+        delegate: ShadowRectangle{
           height: headerList.height
           width: headerItem.implicitWidth + headerItem.anchors.leftMargin +
                  headerItem.anchors.rightMargin
-          radius: 10
           color: "honeydew"
-          layer.enabled: true
-          layer.effect: DropShadow {
-            transparentBorder: true
-            horizontalOffset: 1
-            verticalOffset: 1
-            color: "grey"
-          }
+
           Column{
             id: headerItem
             anchors{
@@ -113,20 +107,6 @@ Pane{
       }
     }
 
-    Component{
-      id: commonBackground
-      Rectangle{
-        radius: 10
-        layer.enabled: true
-        layer.effect: DropShadow {
-          transparentBorder: true
-          horizontalOffset: 1
-          verticalOffset: 1
-          color: "grey"
-        }
-      }
-    }
-
     model: ObjectModel{
       PaymentsItem {
         width: rootList.width
@@ -137,7 +117,7 @@ Pane{
           ListElement { img: "../images/internet.png"; title: "Интернет"; description: "Интернет платежи не выходя из дома" }
           ListElement { img: "../images/bus.png"; title: "Транспорт"; description: "Положить деньги на транспортную карту" }
         }
-        background: Loader{ sourceComponent: commonBackground }
+        background: ShadowRectangle {}
       }
       Advertisement {
         width: rootList.width
@@ -154,7 +134,7 @@ Pane{
           ListElement { img: "../images/person_transfer.png"; title: "Другому человеку"; description: "Перевести деньги клиенту другого банка" }
           ListElement { img: "../images/world_transfer.png"; title: "За рубеж"; description: "Перевести деньги за рубеж" }
         }
-        background: Loader{ sourceComponent: commonBackground }
+        background: ShadowRectangle {}
       }
     }
   }

@@ -15,5 +15,7 @@
         <file>PaymentsItem.qml</file>
         <file>RadiusImage.qml</file>
         <file>Advertisement.qml</file>
+        <file>ServicesPage.qml</file>
+        <file>ShadowRectangle.qml</file>
     </qresource>
 </RCC>
