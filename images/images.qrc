@@ -23,5 +23,14 @@
         <file>bank_transfer.png</file>
         <file>person_transfer.png</file>
         <file>world_transfer.png</file>
+        <file>movie.jpg</file>
+        <file>restaurant.jpg</file>
+        <file>sport.jpg</file>
+        <file>concert.jpg</file>
+        <file>travel.jpg</file>
+        <file>shopping.jpg</file>
+        <file>goods.jpg</file>
+        <file>inshurance.jpg</file>
+        <file>theater.jpg</file>
     </qresource>
 </RCC>

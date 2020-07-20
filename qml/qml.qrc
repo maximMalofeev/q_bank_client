@@ -17,5 +17,6 @@
         <file>Advertisement.qml</file>
         <file>ServicesPage.qml</file>
         <file>ShadowRectangle.qml</file>
+        <file>ServiceItem.qml</file>
     </qresource>
 </RCC>

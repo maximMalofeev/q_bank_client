@@ -13,7 +13,7 @@ Page{
   SwipeView {
     id: swipe
     anchors.fill: parent
-    currentIndex: 1
+    currentIndex: 2
 
     MainPage {}
     PaymentsPage {}

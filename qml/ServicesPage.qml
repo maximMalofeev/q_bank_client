@@ -10,7 +10,7 @@ Pane {
   ListView{
     id: list
     anchors.fill: parent
-    spacing: 5
+    spacing: 15
 
     header: Rectangle{
       width: list.width
@@ -79,12 +79,25 @@ Pane {
         GridLayout{
           id: grid
           columns: 3
+          columnSpacing: 15
+          rowSpacing: 15
           Repeater{
-            model: 9
-            ShadowRectangle{
+            model: ListModel{
+              ListElement{ title: "Кино"; source: "../images/movie.jpg" }
+              ListElement{ title: "Рестораны"; source: "../images/restaurant.jpg" }
+              ListElement{ title: "Спорт"; source: "../images/sport.jpg" }
+              ListElement{ title: "Концерты"; source: "../images/concert.jpg" }
+              ListElement{ title: "Путешествия"; source: "../images/travel.jpg" }
+              ListElement{ title: "Шоппинг"; source: "../images/shopping.jpg" }
+              ListElement{ title: "Товары"; source: "../images/goods.jpg" }
+              ListElement{ title: "Страхование"; source: "../images/inshurance.jpg" }
+              ListElement{ title: "Театр"; source: "../images/theater.jpg" }
+            }
+
+            ServiceItem{
               implicitWidth: list.width / grid.columns - (grid.columns - 1) * grid.columnSpacing / grid.columns
-              implicitHeight: implicitWidth
-              color: "red"
+              title: model.title
+              source: model.source
             }
           }
         }
